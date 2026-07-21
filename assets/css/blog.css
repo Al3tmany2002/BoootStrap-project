@@ -1,0 +1,178 @@
+/* body {
+    padding-top: 70px; 
+}
+.navbar-brand {
+    color: #366385 !important; 
+}
+.navbar-nav .nav-link {
+    color: #366385 !important; 
+}
+.navbar-nav .nav-link:hover {
+    color: #000000 !important; 
+}
+.blog{
+    margin-top: 2000px;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(252, 252, 252);
+}
+.blog{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(252, 252, 252);
+}
+.blog2{
+       margin-left: 200px;
+       margin-top: 5px;
+}
+.home{
+    margin-left: 900px;
+       margin-top: 9px;
+    color: rgb(48, 104, 109);
+}
+.Blog3{
+    margin-left: 3px;
+       margin-top: 10px;
+    color: rgb(48, 104, 109);
+}
+.ph1,.card-body{
+    margin-top: 90px;
+    margin-left: 90px;
+    width: 300px;
+    height: 200px;
+} */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.bl1,
+.bl2{
+    margin:0;
+}
+
+.cards1,
+.cards2{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    width:100%;
+    margin:40px auto;
+}
+
+.card1{
+    margin:0;
+}
+
+.card{
+    width:400px;
+    max-width:100%;
+}
+
+.card img{
+    width:100% !important;
+    height:400px;
+    object-fit:cover;
+}
+.card-text{
+    
+    color: rgb(15, 21, 66);
+}
+.card-text:hover{
+    color:red;
+        
+}
+.author{
+    display: flex;
+}
+.ph1{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid black;
+    margin:20px;
+   background-image: url("https://iili.io/Cjxf1mF.jpg");
+    background-size: 100%;
+    
+}
+.ph2{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid black;
+    margin:20px;
+   background-image: url("https://iili.io/Cjxx1mN.th.jpg");
+    background-size: 100%;
+    
+}
+.ph3{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid black;
+    margin:20px;
+   background-image: url("https://iili.io/CjxzpN2.th.jpg");
+    background-size: 100%;
+    
+}
+.ph4{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid black;
+    margin:20px;
+   background-image: url("https://iili.io/CjxIQWP.th.jpg");
+    background-size: 100%;
+    
+}
+.ph5{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid black;
+    margin:20px;
+   background-image: url("https://iili.io/CjxRfqP.md.jpg");
+    background-size: 100%;
+    
+}
+.ph6{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid black;
+    margin:20px;
+   background-image: url("https://iili.io/Cjx55wx.md.jpg");
+    background-size: 100%;
+    
+}
+.te-ph{
+    font-size:18px;
+    margin-top: 22px;}
+
+@media (max-width:768px){
+
+.header{
+    height:55px;
+}
+
+.nav-blog{
+    flex-direction:column;
+    justify-content:center;
+    gap:10px;
+    padding:15px;
+    text-align:center;
+}
+
+.card{
+    width:95%;
+}
+
+.card img{
+    height:260px;
+}
+
+}

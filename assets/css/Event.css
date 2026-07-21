@@ -1,0 +1,63 @@
+.breadcrum{
+    margin-top: 100px;
+    position: relative;
+    padding: 25px 0;
+    background-color:#F9F9F9;
+}
+h1
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: #24325d;
+}
+
+.Events .card
+{
+    border: 0;
+    padding: 0 30px;
+    margin-bottom: 60px;
+    position: relative;
+
+}
+
+.Events .card .card-img
+{
+    width: calc(100% + 60px);
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 0;
+}
+.Events .card .card-img img
+{
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.Events .card:hover img
+{
+    transform: scale(1.1);
+}
+.Events .card:hover .card-body
+{
+    border-color: #006fbe;
+}
+.Events .card .card-body
+{
+    z-index: 10;
+    background-color: #ffffff;
+    border-top: 4px solid #ffffff;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgb(0,0,0,0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+}
+.Events .card .card-body h5
+{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.Events .card .card-body .txt-card
+{
+    color: #444444;
+}

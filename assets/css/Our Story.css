@@ -1,0 +1,115 @@
+
+
+/* Breadcrumbs */
+.breadcrum{
+    margin-top: 100px;
+    position: relative;
+    padding: 25px 0;
+    background-color:#F9F9F9;
+}
+
+/* Story Sections */
+.story-section {
+    padding: 40px 0;
+}
+
+
+/* Images */
+.story-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+
+
+.story-img:hover,
+.team-img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Team */
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.team-img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.5s ease;
+}
+
+
+/* Scroll Animation */
+
+.hidden {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+
+/* Image/Text From Left */
+.left {
+    transform: translateX(-100px);
+}
+
+
+/* Image/Text From Right */
+.right {
+    transform: translateX(100px);
+}
+
+
+/* Show Element */
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Headings Hover */
+h3:hover,
+h4:hover {
+    color: #0d47a1;
+    transition: 0.4s;
+}
+
+
+
+/* Keyframes */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes fadeDown {
+
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

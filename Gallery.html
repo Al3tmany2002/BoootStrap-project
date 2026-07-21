@@ -6,85 +6,139 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        .top-bar { background-color: #1f53a3; color: white; padding: 5px 20px; display: flex; align-items: center; justify-content: space-between; font-size: 14px; }
+        .top-bar { background-color: #052a63; color: white; padding: 5px 20px; display: flex; align-items: center; justify-content: space-between; font-size: 14px; }
         .left-group { display: flex; align-items: center; gap: 8px; }
         .device-btn { color: white; cursor: pointer; border: none; background: none; }
         
         .gallery-header { padding: 20px 0; background: #f8f9fa; border-bottom: 1px solid #ddd; margin-bottom: 20px;}
         .img-card { background: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 20px; }
         .img-fluid { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; transition: 0.3s; }
-        .footer { background: #333; color: white; padding: 20px; text-align: center; margin-top: 30px; }
     </style>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 
-<div class="top-bar">
-    <div class="left-group">
-        <span>BOOTSTRAPMADE</span>
-        <button class="device-btn" onclick="resizePage('desktop')"><i class="fas fa-desktop"></i></button>
-        <button class="device-btn" onclick="resizePage('tablet')"><i class="fas fa-tablet-alt"></i></button>
-        <button class="device-btn" onclick="resizePage('mobile')"><i class="fas fa-mobile-alt"></i></button>
-    </div>
-    <div>&lt; Me & Family &gt;</div>
-    <div></div>
-</div>
-
-
-<nav class="navbar navbar-expand-lg bg-white border-bottom">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Me & Family</a>
-        <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#">Our Story</a>
-            <a class="nav-link" href="#">Events</a>
-            <a class="nav-link" href="#">Gallery</a>
+<!-- start section navBar -->
+   <nav class="navbar navbar-expand-lg bg-white custom-navbar shadow-sm fixed-top">
+        <div class="container">
+    
+            <a class="navbar-brand fw-bold brand-text" href="#">Me & Family</a>
             
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Our Story.html">Our Story</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Event.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    
+                    
+                    <li class="nav-item dropdown custom-dropdown active-dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                            
+                           
+                            <li class="nav-item dropdown deep-dropdown">
+                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center text-primary" href="#" id="deepDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Deep Dropdown
+                                </a>
+                                <ul class="dropdown-menu border-0 shadow deep-menu" aria-labelledby="deepDropdown">
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                            <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-
-<div class="gallery-header">
-    <div class="container d-flex justify-content-between align-items-center">
-        <h3>Gallery</h3>
-        <nav>Home / Gallery</nav>
-    </div>
-</div>
+   </nav>
+   <!-- End section navBar -->
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3"><div class="img-card"><img src="images/WhatsApp Image 2026-07-14 at 10.16.49 PM (1).jpeg" class="img-fluid"></div></div>
-        <div class="col-md-3"><div class="img-card"><img src="images/WhatsApp Image 2026-07-14 at 9.52.13 PM.jpeg" class="img-fluid"></div></div>
-        <div class="col-md-3"><div class="img-card"><img src="images/WhatsApp Image 2026-07-14 at 11.43.00 PM.jpeg" class="img-fluid"></div></div>
-        <div class="col-md-3"><div class="img-card"><img src="images/WhatsApp Image 2026-07-14 at 11.43.49 PM.jpeg" class="img-fluid"></div></div>
-        <div class="col-md-3"><div class="img-card"><img src="images/WhatsApp Image 2026-07-15 at 12.41.15 AM.jpeg" class="img-fluid"></div></div>
-        <div class="col-md-3"><div class="img-card"><img src="images/WhatsApp Image 2026-07-15 at 12.33.53 AM.jpeg" class="img-fluid"></div></div>
-        <div class="col-md-3"><div class="img-card"><img src="images/WhatsApp Image 2026-07-15 at 12.08.56 AM.jpeg" class="img-fluid"></div></div>
-        <div class="col-md-3"><div class="img-card"><img src="images/WhatsApp Image 2026-07-15 at 12.02.39 AM.jpeg" class="img-fluid"></div></div>
-    </div>
-</div>
-
-
-
-<footer style="background-color: #0d1e3d; color: white; padding: 40px 0; width: 100%; text-align: center; margin-top: 50px;">
+<!-- Breadcrumbs -->
+<div class="breadcrum">
     <div class="container">
-        <h3 style="margin-bottom: 15px;">Me & Family</h3>
-        <p style="margin-bottom: 20px; opacity: 0.8;">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-        
-        
-        <div style="margin-bottom: 20px;">
-            <a href="#" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fab fa-twitter"></i></a>
-            <a href="#" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fab fa-facebook"></i></a>
-            <a href="#" style="color: white; margin: 0 10px; font-size: 20px;"><i class="fab fa-instagram"></i></a>
-        </div>
-        
-        <hr style="border-color: rgba(255,255,255,0.2); width: 50%; margin: 20px auto;">
-        
-        <p style="font-size: 14px; margin: 0;">Copyright <strong>Me & Family</strong> All Rights Reserved</p>
-        <p style="font-size: 13px; opacity: 0.7;">Designed by BootstrapMade</p>
+      <div class="d-lg-flex justify-content-between">
+          <h1 class="text-capitalize">Gallery</h1>
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+  </ol>
+</nav>
+      </div>
     </div>
-</footer>
+    
+  </div>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-3"><div class="img-card"><img src="assets/imgs/Gallery (1).jpeg" class="img-fluid"></div></div>
+        <div class="col-md-3"><div class="img-card"><img src="assets/imgs/Gallery (2).jpeg" class="img-fluid"></div></div>
+        <div class="col-md-3"><div class="img-card"><img src="assets/imgs/Gallery (3).jpeg" class="img-fluid"></div></div>
+        <div class="col-md-3"><div class="img-card"><img src="assets/imgs/Gallery (4).jpeg" class="img-fluid"></div></div>
+        <div class="col-md-3"><div class="img-card"><img src="assets/imgs/Gallery (5).jpeg" class="img-fluid"></div></div>
+        <div class="col-md-3"><div class="img-card"><img src="assets/imgs/Gallery (6).jpeg" class="img-fluid"></div></div>
+        <div class="col-md-3"><div class="img-card"><img src="assets/imgs/Gallery (7).jpeg" class="img-fluid"></div></div>
+        <div class="col-md-3"><div class="img-card"><img src="assets/imgs/Gallery (8).jpeg" class="img-fluid"></div></div>
+    </div>
+</div>
+
+
+
+<!-- start section footer  -->
+              <footer>
+                <div class="container-lg">
+                    <div class="footer text-center">
+                        <h3>Me & Family</h3>
+                        <p class="mb-3 fst-italic">Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+                         <div class="icon-footer d-flex p-3 justify-content-center align-items-center">
+                        <a href="#"">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                         <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                         <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                         <a href="#">
+                            <i class="fa-brands fa-skype"></i>
+                        </a>
+                         <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <hr>
+                    <p>Copyright <span class="txt-1">Me & Family</span> All Rights Reserved</p>
+                    <p>Designed by <span class="txt-2"><a href="#">BootstrapMade</a></span></p>
+                    </div>
+                   
+                </div>
+              </footer>
+            <!-- End section footer  -->
 
 
 <script>
